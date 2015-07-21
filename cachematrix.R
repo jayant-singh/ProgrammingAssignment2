@@ -26,7 +26,7 @@
 #Last, the getinverse() fn. only displays the matrix assigned to "m" in the
 #setinverse() fn.
 
-################################################################
+##########Describing first function###############
 makeCacheMatrix<-function(x=matrix()){
   m <- NULL
   set<-function(n){
@@ -47,7 +47,7 @@ makeCacheMatrix<-function(x=matrix()){
   list(set=set,getnew=getnew,setinverse=setinverse,getinverse=getinverse)
 }
 
-#################Describimng the Second function###################
+#################Describing the Second function###################
 
 #Once the matrix is created using makeCacheMatrix(), its inverse needs to be 
 # computed. Before computing the inverse, we will check value of "m". If the 
@@ -72,6 +72,11 @@ cacheSolve<- function(y1){
       
       print("Return cached inverse")
       return (m)
+    }
+    else{
+      
+      m=NULL
+      print(m)
     }
   }
   
